@@ -1,0 +1,209 @@
+@use "../utils/variables" as *;
+
+.offering {
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 90px;
+        align-items: center;
+    }
+}
+
+.offering-image__container {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (min-width: 768px) {
+        // justify-content: center;
+    }
+}
+.offering-image__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+        width: 357px;
+        height: 357px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 550px;
+        height: 550px;
+        border-width: 5px;
+    }
+}
+.offering-image__background {
+    position: absolute;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    background-color: rgba($color: #FFFFFF, $alpha: 1.0);
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 31px);
+        height: calc(100% - 31px);
+    }
+}
+.offering-image__pictures {
+    position: absolute;
+    top: -30px;
+}
+.offering-image__shadow {
+    position: absolute;
+    width: 128.29px;
+    height: 44.29px;
+    bottom: 38px;
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    filter: blur(6.61818px);
+}
+
+.offering-container {
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 23px;
+        width: 526px;
+    }
+}
+.offering__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.18;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}
+.offering__text {
+    margin-top: 28px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.18;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+.offering-list {
+    margin-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 116px;
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        gap: 67px;
+    }
+}
+.offering-list__item {
+    margin-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        min-width: 252px;
+    }
+}
+.offering-list__title {
+    margin-top: 8px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.18;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.4;
+    }
+
+}
+.offering-list__text {
+    margin-top: 16px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.5;
+    }
+}
+.offering-list__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.offering-list__icon {
+
+    fill: $icon-hover-color;
+}
+
+.offering__menu {
+    margin-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 32px;
+    }
+}
+.offering__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    margin-left: 24px;
+    gap: 3.42px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+.offering-image__second {
+    display: none;
+    margin-left: 29px;
+    margin-top: 42px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: block;
+    }
+
+}
+.offering-image__third {
+    display: none;
+    margin-left: 44px;
+    margin-top: 114px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: block;
+    }
+}

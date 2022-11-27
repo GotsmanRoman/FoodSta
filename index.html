@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a class="logo" href="#">
+            <svg width="66px" height="52px">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="menu-container">
+            <svg
+              class="menu-open"
+              width="28"
+              height="28px"
+              aria-expanded="false"
+              data-menu-button-open
+            >
+              <use href="./images/sprite.svg#icon-menu_28px"></use>
+            </svg>
+            <div class="menu" data-menu>
+              <svg
+                class="menu-cross"
+                width="24px"
+                height="24px"
+                data-menu-button-close
+              >
+                <use href="./images/sprite.svg#icon-menu_closed_24px"></use>
+              </svg>
+              <ul class="menu-list">
+                <li class="menu-list__item abc">Home</li>
+                <li class="menu-list__item">About</li>
+                <li class="menu-list__item">Service</li>
+                <li class="menu-list__item">Menu</li>
+                <li class="menu-list__item">Contact</li>
+              </ul>
+              <button class="button button--order">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__text">
+              <h1 class="hero__label">
+                Enjoy Your Favorite Food From Anywhere
+              </h1>
+              <p class="hero__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat.
+              </p>
+              <button class="button button--hero">Order Now</button>
+            </div>
+            <div class="hero-slider">
+              <div class="hero-slider__icon-container">
+                <svg
+                  class="hero-slider__icon hero-slider__icon--flip"
+                  width="34px"
+                  height="28px"
+                >
+                  <use href="./images/sprite.svg#icon-slider-arrow_768px"></use>
+                </svg>
+                <svg class="hero-slider__icon" width="34px" height="28px">
+                  <use href="./images/sprite.svg#icon-slider-arrow_768px"></use>
+                </svg>
+              </div>
+              <picture class="hero-slider__image">
+                <source
+                  srcset="
+                    ./images/Original/hero-image_1280px.png    1x,
+                    ./images/Original/hero-image_1280px_2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  src="./images/Original/hero-image_768px.png"
+                  srcset="./images/Original/hero-image_768px_2x.png 2x"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--main">
+        <div class="container">
+          <div class="offering">
+            <div class="offering-image__container">
+              <div class="offering-image__main">
+                <div class="offering-image__background"></div>
+                <div class="offering-image__shadow"></div>
+                <picture class="offering-image__pictures">
+                  <source
+                    srcset="
+                      ./images/Original/apple_768px.png    1x,
+                      ./images/Original/apple_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/apple_1280px.png    1x,
+                      ./images/Original/apple_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    src="./images/Original/apple_320px.png"
+                    srcset="./images/Original/apple_320px_2x.png 2x"
+                  />
+                </picture>
+              </div>
+              <div class="offering-image__second">
+                <img
+                  src="./images/Original/apple-second_768px.png"
+                  srcset="./images/Original/apple-second_768px_2x.png 2x"
+                />
+              </div>
+              <div class="offering-image__third">
+                <img
+                  src="./images/Original/apple-third_768px.png"
+                  srcset="./images/Original/apple-third_768px_2x.png 2x"
+                />
+              </div>
+            </div>
+            <div class="offering-container">
+              <h2 class="offering__title">
+                What’s Special About Our Offerings
+              </h2>
+              <p class="offering__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat.
+              </p>
+              <ul class="offering-list">
+                <li class="offering-list__item">
+                  <div class="offering-list__icon-container">
+                    <svg class="offering-list__icon" width="32px" height="32px">
+                      <use href="./images/sprite.svg#icon-delivery_32px"></use>
+                    </svg>
+                  </div>
+                  <h3 class="offering-list__title">Fasest Delivery</h3>
+                  <p class="offering-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros.
+                  </p>
+                </li>
+                <li class="offering-list__item">
+                  <div class="offering-list__icon-container">
+                    <svg class="offering-list__icon" width="32px" height="32px">
+                      <use href="./images/sprite.svg#icon-order_32px"></use>
+                    </svg>
+                  </div>
+                  <h3 class="offering-list__title">Easy to order</h3>
+                  <p class="offering-list__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros.
+                  </p>
+                </li>
+              </ul>
+              <div class="offering__menu">
+                <button class="button button--main">Order Now</button>
+                <a class="offering__link" href="#"
+                  >Read More
+                  <svg width="13.7px" height="13.7px">
+                    <use href="./images/sprite.svg#icon-button-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--favorites">
+        <div class="container">
+          <div class="favorites">
+            <h2 class="favorites__title">Some of Our Favorites</h2>
+            <p class="favorites__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <ul class="favorites-list">
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/gamburger_768px.png    1x,
+                      ./images/Original/gamburger_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/gamburger_1280px.png    1x,
+                      ./images/Original/gamburger_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/gamburger_320px.png"
+                    srcset="./images/Original/gamburger_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/pasta_768px.png    1x,
+                      ./images/Original/pasta_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/pasta_1280px.png    1x,
+                      ./images/Original/pasta_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/pasta_320px.png"
+                    srcset="./images/Original/pasta_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/pizza_768px.png    1x,
+                      ./images/Original/pizza_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/pizza_1280px.png    1x,
+                      ./images/Original/pizza_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/pizza_320px.png"
+                    srcset="./images/Original/pizza_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/chicken_768px.png    1x,
+                      ./images/Original/chicken_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/chicken_1280px.png    1x,
+                      ./images/Original/chicken_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/chicken_320px.png"
+                    srcset="./images/Original/chicken_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/salat_768px.png    1x,
+                      ./images/Original/salat_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/salat_1280px.png    1x,
+                      ./images/Original/salat_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/salat_320px.png"
+                    srcset="./images/Original/salat_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+              <li class="favorites-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Original/borshch_768px.png    1x,
+                      ./images/Original/borshch_768px_2x.png 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Original/borshch_1280px.png    1x,
+                      ./images/Original/borshch_1280px_2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    class="favorites-list__image"
+                    href="./images/Original/borshch_320px.png"
+                    srcset="./images/Original/borshch_320px_2x.png 2x"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section--feedbacks">
+        <div class="container">
+          <div class="feedbacks">
+            <h2 class="feedbacks__title">What our Customers Say</h2>
+            <p class="feedbacks__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <ul class="feedbacks-list">
+              <li class="feedbacks-list__item">
+                <ul class="feedbacks-list__ratings ratings-list">
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="feedbacks-list__text">
+                  “The Best app I have used to order food in a while, so many
+                  options to choose from too, I would recommend to a freind, No
+                  questions asked”
+                </p>
+                <div class="feedbacks-list__meta">
+                    <img class="feedbacks-list__image" href="./images/Original/rating-image1.jpg" srcset="./images/Original/rating-image1_2x.jpg"></img>
+                    <div class="feedbacks-list__info">                  
+                      <p class="feedbacks-list__name">Sumith Shah</p>
+                      <p class="feedbacks-list__sign">Some Dude</p>
+                    </div>
+                </div>
+              </li>
+              <li class="feedbacks-list__item">
+                <ul class="feedbacks-list__ratings ratings-list">
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="ratings-list__item">
+                    <svg class="ratings-list__star" width="17px" height="16px">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="feedbacks-list__text">
+                  “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”
+                </p>
+                <div class="feedbacks-list__meta">
+                    <img class="feedbacks-list__image" href="./images/Original/rating-image2.jpg" srcset="./images/Original/rating-image2_2x.jpg"></img>
+                    <div class="feedbacks-list__info">                  
+                      <p class="feedbacks-list__name">Sumith Shah</p>
+                      <p class="feedbacks-list__sign">Some Dude</p>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section--subscribe">
+        <div class="container">
+          <div class="subscribe">
+            <picture class="subscribe__image-container">
+              <source srcset="./images/Original/subscribe-bg_768px.png 1x, ./images/Original/subscribe-bg_768px.png 2x" media="(min-width: 768px) and (max-width: 1279px)">
+              <source srcset="./images/Original/subscribe-bg_1280px.png 1x, ./images/Original/subscribe-bg_1280px.png 2x" media="(min-width: 1280px)">
+              <img class="subscribe__image" href="./images/Original/subscribe-bg_320px.png" srcset="./images/Original/subscribe-bg_320px_2x.png 2x">
+            </picture>
+            <div class="subscribe__container">            
+              <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+              <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim 
+                in eros elementum tristique.
+              </p>
+              <form class="subscribe__form">
+                <input class="subscribe__input" placeholder="Enter your email">
+                <button class="button button--subscribe margin-left">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section section--footer">
+      <div class="container">
+        <div class="footer">
+          <a class="logo" href="#">
+            <svg width="66px" height="52px">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="menu menu--footer" data-menu>
+            <svg
+              class="menu-cross"
+              width="24px"
+              height="24px"
+              data-menu-button-close
+            >
+              <use href="./images/sprite.svg#icon-menu_closed_24px"></use>
+            </svg>
+            <ul class="menu-list">
+              <li class="menu-list__item abc">Home</li>
+              <li class="menu-list__item">About</li>
+              <li class="menu-list__item">Service</li>
+              <li class="menu-list__item">Menu</li>
+              <li class="menu-list__item">Contact</li>
+            </ul>
+            <button class="button button--order">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

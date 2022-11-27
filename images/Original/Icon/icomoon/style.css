@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-ep_arrow-up {
+  width: 1.2138671875em;
+}
+
+.icon-ep_arrow-up1 {
+  width: 1.2138671875em;
+}
+
+.icon-arrow-left_20-11px {
+  width: 0.5458984375em;
+}
+
+.icon-arrow-left_28-34px {
+  width: 1.1669921875em;
+}
+
+.icon-arrow-left_29-16px {
+  width: 0.56640625em;
+}
+
+.icon-arrow-left_40-48px {
+  width: 1.1669921875em;
+}
+
+.icon-arrow-right_20-11px {
+  width: 0.5458984375em;
+}
+
+.icon-arrow-right_28-34px {
+  width: 1.1669921875em;
+}
+
+.icon-arrow-right_29-16px {
+  width: 0.56640625em;
+}
+
+.icon-arrow-right_40-48px {
+  width: 1.1669921875em;
+}
+
+.icon-menu_closed_24px {
+  width: 0.9228515625em;
+}
+
+.icon-logo {
+  width: 1.26953125em;
+}
+
+.icon-menu_23px {
+  width: 1.3330078125em;
+}

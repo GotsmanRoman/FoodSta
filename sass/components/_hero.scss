@@ -1,0 +1,101 @@
+@use "../utils/variables" as *;
+.hero {
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+    }
+    &__text {
+        @media screen and (min-width: 1280px) {
+            max-width: 502px;
+        }
+    }
+    &__label {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+
+        @media screen and (min-width: 768px) {
+            font-size: 42px;
+            line-height: 1.2;
+            max-width: 537px;
+        }
+        @media screen and (min-width: 1280px) {
+            font-size: 48px;
+        }
+    }
+    &__description {
+        margin-top: 28px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            margin-top: 44px;
+            font-size: 16px;
+            max-width: 336px;
+        }
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+        }
+    }
+}
+.hero-slider {
+    display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 89px;
+        right: 32px;
+        width: 336px;
+        height: 320px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 608px;
+        height: 580px;
+        margin-top: 14px;
+    }
+    &__icon-container {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        cursor: pointer;  
+    }
+    &__image {
+        border: 14px solid #FFE550;
+        border-radius: 50%;
+
+        @media screen and (min-width: 1280px) {
+            border-width: 26px;
+        }
+    }
+    &__icon {
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        stroke: currentColor;
+
+        @media screen and (min-width: 1280px) {
+            width: 48px;
+            height: 40px;
+        }
+        &:hover {
+            stroke: $icon-hover-color;
+        }
+        &--flip {
+            transform: rotateY(180deg);
+        }
+    }
+}

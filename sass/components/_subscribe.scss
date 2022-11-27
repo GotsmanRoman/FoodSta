@@ -1,0 +1,84 @@
+@use "../utils/variables" as *;
+
+.subscribe {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+.subscribe__image-container {
+    display: block;
+}
+.subscribe__image {
+    display: block;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+}
+.subscribe__title {
+    margin-top: 17px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}
+.subscribe__text {
+    margin-top: 20px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+.subscribe__form {
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 24px;
+        display: flex;
+        gap: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+        gap: 32px;
+    }
+}
+.subscribe__input {
+    background: #FFFFFF;
+    padding: 12px 0 12px 12px;
+    margin-bottom: 20px;
+    /* Yellow main */
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+
+    @media screen and (min-width: 768px) {
+        width: 394px;
+    }
+}
+.subscribe__input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+
+    /* identical to box height, or 18px */
+
+    /* Neutral/Dark gray */
+    color: #505050;
+}
