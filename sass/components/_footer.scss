@@ -1,2 +1,51 @@
 @use "../utils/variables" as *;
 
+.footer {
+    display: flex;
+    gap: 81px;
+    flex-wrap: wrap;
+}
+.additional {
+    width: 100%;
+}
+.additional__subscribe {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.additional__policy {
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #7EB101;
+    cursor: pointer;
+}
+.additional__list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    /* identical to box height */
+    text-decoration-line: underline;
+
+    /* Dark green */
+    color: #7EB101;
+}
+.additional-list__item {
+    cursor: pointer;
+}
+.additional_copyrights {
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+
+    /* identical to box height */
+
+    color: #2C2C2C;
+}

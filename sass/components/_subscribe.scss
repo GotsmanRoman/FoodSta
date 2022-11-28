@@ -57,6 +57,21 @@
     @media screen and (min-width: 1280px) {
         gap: 32px;
     }
+    &--footer {
+        width: 100%;
+    }
+}
+.subscribe__label {
+    display: none;
+    
+    &--footer {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 12px;
+    }
+
 }
 .subscribe__input {
     background: #FFFFFF;

@@ -8,7 +8,7 @@
 @use "./components/favorites";
 @use "./components/feedbacks";
 @use "./components/subscribe";
-
+@use "./components/footer";
 
 body,
 h1,
@@ -164,6 +164,7 @@ h6 {
 
             /* Futter shadow */
             box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
         }
     }
 }
