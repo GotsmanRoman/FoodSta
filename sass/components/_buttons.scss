@@ -107,10 +107,11 @@
         }
     }
 }
-.margin-left {
+.margin {
 
     @media screen and (max-width: 767px) {
         margin-left: auto;
+        margin-top: 20px;
     }
 
 }
