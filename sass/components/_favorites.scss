@@ -44,6 +44,15 @@
     border: 11px solid rgba(255, 229, 80, 1);
     border-radius: 50%;
 
+    cursor: pointer;
+
+    @include transition(border-color);
+    
+    &:hover,
+    &:focus {
+        border-color: $text-hover-color;
+    }
+
     @media screen and (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;

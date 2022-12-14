@@ -2,3 +2,12 @@ $text-primary-color: #2C2C2C;
 $text-hover-color: #BBF330;
 $bg-hover-color: #FFE450;
 $icon-hover-color: #7EB101;
+$menu-hover-color: #FFE550;
+$input-color: #C4C4C4;
+
+
+@mixin transition($type, $ms: 250ms, $function : cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-property: $type;
+    transition-duration: $ms;
+    transition-timing-function: $function;
+}

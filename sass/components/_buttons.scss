@@ -6,7 +6,10 @@
     margin: 0;
 
 
-    &:hover {
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
         background-color: $bg-hover-color;
     }
     &--order {
@@ -77,6 +80,8 @@
         border: 2px solid #7EB101;
         border-radius: 30px;
 
+        @include transition(background-color);
+
         &:hover {
             background-color: $text-hover-color;
         }
@@ -96,6 +101,8 @@
         background: #BBF330;
         border-radius: 30px;
 
+        @include transition(background-color);
+
         &:hover {
             background-color: $bg-hover-color;
         }
@@ -106,6 +113,31 @@
 
         }
     }
+    &--modal {
+        display: block;
+        width: 106px;
+        height: 40px;
+
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+
+        color: #2C2C2C;
+        cursor: pointer;
+        
+        background: #FFFFFF;
+
+        border: 2px solid #7EB101;
+        border-radius: 30px;
+
+        @include transition(background-color);
+
+        &:hover {
+            background-color: $text-hover-color;
+        }
+    }
 }
 .margin {
 
@@ -114,4 +146,9 @@
         margin-top: 20px;
     }
 
+}
+.margin-modal {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }

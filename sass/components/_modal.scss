@@ -1,0 +1,111 @@
+@use "../utils/variables" as *;
+
+.modal-open {
+    overflow: hidden;
+}
+.backdrop {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    overflow-y: scroll;
+    background: rgba(94, 99, 99, 0.7);
+
+    padding: 0 15px;
+  }
+.backdrop--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.modal {
+    width: 100%;
+    max-width: 458px;
+    height: 449px;
+    padding: 32px 20px;
+    margin-top: 60px;
+    position: relative;
+    background-color: $bg-hover-color;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 1;
+
+    &--hidden {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+    &__icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        cursor: pointer;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+    }
+    &__icon {
+        fill: $text-primary-color;
+
+        &:hover {
+            fill: $icon-hover-color;
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__item {
+    }
+    &__label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        padding-left: 12px;
+    }
+    &__input {
+        margin-top: 2px;
+        height: 48px;
+        width: 100%;
+        padding-left: 12px;
+
+        border: 1px solid #7EB101;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+
+        outline: none;
+        
+        &:hover,
+        &:focus {
+            outline: none;
+            border-color: #09770B;
+        }
+
+        &::placeholder {
+            color: $input-color;
+
+     
+        }
+    }
+}

@@ -14,6 +14,40 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="backdrop backdrop--hidden" data-backdrop>
+      <div class="modal modal--hidden" data-modal>
+        <div class="modal__icon-container" data-modal-close>
+          <svg class="modal__icon" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-modal_close"></use>
+          </svg>
+        </div>
+        <h2 class="modal__header">Order Form</h2>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="modal__label"
+              >Name
+              <input class="modal__input" placeholder="Your name" />
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__label"
+              >Phone number
+              <input
+                class="modal__input"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__label"
+              >E-mail
+              <input class="modal__input" placeholder="example@gmail.com" />
+            </label>
+          </li>
+        </ul>
+        <button class="button button--modal margin-modal">Send</button>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-container">
@@ -42,13 +76,40 @@
                 <use href="./images/sprite.svg#icon-menu_closed_24px"></use>
               </svg>
               <ul class="menu-list menu-list--header">
-                <li class="menu-list__item menu-list__item--header">Home</li>
-                <li class="menu-list__item menu-list__item--header">About</li>
-                <li class="menu-list__item menu-list__item--header">Service</li>
-                <li class="menu-list__item menu-list__item--header">Menu</li>
-                <li class="menu-list__item menu-list__item--header">Contact</li>
+                <li
+                  class="menu-list__item menu-list__item--header"
+                  tabindex="1"
+                >
+                  Home
+                </li>
+                <li
+                  class="menu-list__item menu-list__item--header"
+                  tabindex="1"
+                >
+                  About
+                </li>
+                <li
+                  class="menu-list__item menu-list__item--header"
+                  tabindex="1"
+                >
+                  Service
+                </li>
+                <li
+                  class="menu-list__item menu-list__item--header"
+                  tabindex="1"
+                >
+                  Menu
+                </li>
+                <li
+                  class="menu-list__item menu-list__item--header"
+                  tabindex="1"
+                >
+                  Contact
+                </li>
               </ul>
-              <button class="button button--order">Order Now</button>
+              <button class="button button--order" data-modal-open>
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -69,7 +130,9 @@
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                 commodo diam libero vitae erat.
               </p>
-              <button class="button button--hero">Order Now</button>
+              <button class="button button--hero" data-modal-open>
+                Order Now
+              </button>
             </div>
             <div class="hero-slider">
               <div class="hero-slider__icon-container">
@@ -179,7 +242,9 @@
                 </li>
               </ul>
               <div class="offering__menu">
-                <button class="button button--main">Order Now</button>
+                <button class="button button--main" data-modal-open>
+                  Order Now
+                </button>
                 <a class="offering__link" href="#"
                   >Read More
                   <svg width="13.7px" height="13.7px">
@@ -199,7 +264,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <ul class="favorites-list">
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -222,7 +287,7 @@
                   />
                 </picture>
               </li>
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -245,7 +310,7 @@
                   />
                 </picture>
               </li>
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -268,7 +333,7 @@
                   />
                 </picture>
               </li>
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -291,7 +356,7 @@
                   />
                 </picture>
               </li>
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -314,7 +379,7 @@
                   />
                 </picture>
               </li>
-              <li class="favorites-list__item">
+              <li class="favorites-list__item" tabindex="1">
                 <picture>
                   <source
                     srcset="
@@ -383,11 +448,15 @@
                   questions asked”
                 </p>
                 <div class="feedbacks-list__meta">
-                    <img class="feedbacks-list__image" href="./images/Original/rating-image1.jpg" srcset="./images/Original/rating-image1_2x.jpg"></img>
-                    <div class="feedbacks-list__info">                  
-                      <p class="feedbacks-list__name">Sumith Shah</p>
-                      <p class="feedbacks-list__sign">Some Dude</p>
-                    </div>
+                  <img
+                    class="feedbacks-list__image"
+                    href="./images/Original/rating-image1.jpg"
+                    srcset="./images/Original/rating-image1_2x.jpg"
+                  />
+                  <div class="feedbacks-list__info">
+                    <p class="feedbacks-list__name">Sumith Shah</p>
+                    <p class="feedbacks-list__sign">Some Dude</p>
+                  </div>
                 </div>
               </li>
               <li class="feedbacks-list__item">
@@ -419,14 +488,20 @@
                   </li>
                 </ul>
                 <p class="feedbacks-list__text">
-                  “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”
+                  “The ease with which I can just go in and order what i want
+                  was amazing, It has been a very pleasant experience ordering
+                  from this app”
                 </p>
                 <div class="feedbacks-list__meta">
-                    <img class="feedbacks-list__image" href="./images/Original/rating-image2.jpg" srcset="./images/Original/rating-image2_2x.jpg"></img>
-                    <div class="feedbacks-list__info">                  
-                      <p class="feedbacks-list__name">Sumith Shah</p>
-                      <p class="feedbacks-list__sign">Some Dude</p>
-                    </div>
+                  <img
+                    class="feedbacks-list__image"
+                    href="./images/Original/rating-image2.jpg"
+                    srcset="./images/Original/rating-image2_2x.jpg"
+                  />
+                  <div class="feedbacks-list__info">
+                    <p class="feedbacks-list__name">Sumith Shah</p>
+                    <p class="feedbacks-list__sign">Some Dude</p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -437,18 +512,40 @@
         <div class="container">
           <div class="subscribe">
             <picture class="subscribe__image-container">
-              <source srcset="./images/Original/subscribe-bg_768px.png 1x, ./images/Original/subscribe-bg_768px.png 2x" media="(min-width: 768px) and (max-width: 1279px)">
-              <source srcset="./images/Original/subscribe-bg_1280px.png 1x, ./images/Original/subscribe-bg_1280px.png 2x" media="(min-width: 1280px)">
-              <img class="subscribe__image" href="./images/Original/subscribe-bg_320px.png" srcset="./images/Original/subscribe-bg_320px_2x.png 2x">
+              <source
+                srcset="
+                  ./images/Original/subscribe-bg_768px.png 1x,
+                  ./images/Original/subscribe-bg_768px.png 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/Original/subscribe-bg_1280px.png 1x,
+                  ./images/Original/subscribe-bg_1280px.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <img
+                class="subscribe__image"
+                href="./images/Original/subscribe-bg_320px.png"
+                srcset="./images/Original/subscribe-bg_320px_2x.png 2x"
+              />
             </picture>
-            <div class="subscribe__container">            
+            <div class="subscribe__container">
               <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-              <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim 
-                in eros elementum tristique.
+              <p class="subscribe__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
               </p>
               <form class="subscribe__form">
-                <input class="subscribe__input" placeholder="Enter your email">
-                <button class="button button--subscribe margin">Subscribe</button>
+                <input
+                  class="subscribe__input"
+                  placeholder="Enter your email"
+                />
+                <button class="button button--subscribe margin">
+                  Subscribe
+                </button>
               </form>
             </div>
           </div>
@@ -474,18 +571,41 @@
               <use href="./images/sprite.svg#icon-menu_closed_24px"></use>
             </svg>
             <ul class="menu-list menu-list--footer">
-              <li class="menu-list__item menu-list__item--footer">Home</li>
-              <li class="menu-list__item menu-list__item--footer">About</li>
-              <li class="menu-list__item menu-list__item--footer">Service</li>
-              <li class="menu-list__item menu-list__item--footer">Menu</li>
-              <li class="menu-list__item menu-list__item--footer">Contact</li>
+              <li class="menu-list__item menu-list__item--footer" tabindex="1">
+                Home
+              </li>
+              <li class="menu-list__item menu-list__item--footer" tabindex="1">
+                About
+              </li>
+              <li class="menu-list__item menu-list__item--footer" tabindex="1">
+                Service
+              </li>
+              <li class="menu-list__item menu-list__item--footer" tabindex="1">
+                Menu
+              </li>
+              <li class="menu-list__item menu-list__item--footer" tabindex="1">
+                Contact
+              </li>
             </ul>
           </div>
           <form class="subscribe__form subscribe__form--footer">
-            <label class="subscribe__label subscribe__label--footer" for="subscribe__input">Subscribe</label>
-            <input class="subscribe__input subscribe__input--footer" id="subscribe__input" placeholder="Enter your email">
-            <button class="button button--subscribe--footer margin">Subscribe</button>
-            <p class="additional__subscribe">By subscribing you agree to with our <span class="additional__policy">Privacy Policy</span></p>
+            <label
+              class="subscribe__label subscribe__label--footer"
+              for="subscribe__input"
+              >Subscribe</label
+            >
+            <input
+              class="subscribe__input subscribe__input--footer"
+              id="subscribe__input"
+              placeholder="Enter your email"
+            />
+            <button class="button button--subscribe--footer margin">
+              Subscribe
+            </button>
+            <p class="additional__subscribe">
+              By subscribing you agree to with our
+              <span class="additional__policy">Privacy Policy</span>
+            </p>
           </form>
           <div class="additional">
             <ul class="additional__list">
@@ -493,11 +613,14 @@
               <li class="additional-list__item">Terms of Service</li>
               <li class="additional-list__item">Cookies Settings</li>
             </ul>
-            <p class="additional_copyrights">2022 FoodSta. All right reserved.</p>
+            <p class="additional_copyrights">
+              2022 FoodSta. All right reserved.
+            </p>
           </div>
         </div>
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
