@@ -17,7 +17,7 @@
         menuBtnClose.setAttribute("aria-expanded", !expanded);
 
         mobileMenuRef.classList.remove("is-open");
-        document.body.classList.add("modal-open");
+        document.body.classList.remove("modal-open");
     })
 
 })();
